@@ -11,5 +11,8 @@ name = ""
 service = Webservice(name=name, workspace=ws)
 logs = service.get_logs()
 
+#Enable Application Insights
+service.update(enable_app_insights=True)
+
 for line in logs.split('\n'):
     print(line)
