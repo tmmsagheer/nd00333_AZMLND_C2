@@ -5,14 +5,15 @@ from azureml.core.webservice import Webservice
 ws = Workspace.from_config()
 
 # Set with the deployment name
-name = ""
+name = "best-model-aml"
 
 # load existing web service
 service = Webservice(name=name, workspace=ws)
-logs = service.get_logs()
 
-#Enable Application Insights
+# enable application insight
 service.update(enable_app_insights=True)
+
+logs = service.get_logs()
 
 for line in logs.split('\n'):
     print(line)
