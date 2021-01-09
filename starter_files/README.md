@@ -6,13 +6,18 @@ In this project, we do the following:
 3. Repeat the same with Azure Python SDK using the Jupyter Notebook provided above
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+![Architecture](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Architecture.png)
+
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
+1. Upload Bank Marketing Dataset from: https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
+![Registered Dataset](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Registered_Datasets.png)
+2. Create an Automated Machine Learning Experiment and Execute the same
+![Completed AML Experiment](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Completed_AML.png)
+
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+Please find the screencast here: https://youtu.be/SkluBFWubZ8
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
