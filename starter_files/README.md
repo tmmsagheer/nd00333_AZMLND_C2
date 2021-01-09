@@ -14,7 +14,7 @@ In this project, we do the following:
 ![Registered Dataset](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Registered_Datasets.png)
 2. Create an Automated Machine Learning Experiment and Execute the same
 ![Completed AML Experiment](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Completed_AML.png)
-3. The best model graded on our choice metric (Accuracy in this project) is shown beside the status of the Experiment.
+3. The best model graded on our choice metric (Accuracy in this project) is shown beside the Experiment's status.
 ![Best Model](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Completed_AML2.png)
 ![Best Model](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/BestRunModel2.png)
 ![Best Model](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/BestRunModel.png)
@@ -44,14 +44,14 @@ The above screenshot shows the run details of Pipeline Endpoint run in aml-pipel
 ![Pipeline Automation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/pipeline_2_7.png)
 The above screenshot shows the same Run ID in Azure ML Studio for reference.
 
-
-
-
-
-
-
 ## Screen Recording
 Please find the screencast here: https://youtu.be/SkluBFWubZ8.
 
 ## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+In this project, I have also benchmarked the REST Endpoint and found that it took 136 ms as a worst-case time to respond to my inputs. I understand that this will vary based on many factors like the Internet Speed and the Machine used, for example, still, I find this quick enough for most applications.
+
+## Scope for Improvement
+1. Implement Parallel Run Step for executing an asynchronous batch scoring
+2. Convert and store the best model in ONNX format
+3. Package the model to deploy it to a local docker container
+4. Use various combinations of metrics to choose the best model
