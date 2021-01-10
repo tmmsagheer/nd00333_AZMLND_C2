@@ -10,40 +10,87 @@ In this project, we do the following:
 
 
 ## Key Steps
-1. Upload Bank Marketing Dataset from: https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
+1. Upload Bank Marketing Dataset from https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv
+
 ![Registered Dataset](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Registered_Datasets.png)
+
+In this step, we can view the sample rows of the dataset. Azure ML studio also offers the possibility of changing the column data types. The dataset can be uploaded from local files or directly from the URL too.
+
 2. Create an Automated Machine Learning Experiment and Execute the same
+
 ![Completed AML Experiment](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Completed_AML.png)
+
+AutoML runs multiple models on the compute instance and grades the models based on our choice metric (Accuracy in this project). IMO, AutoML is one of the best features of Azure ML studio.
+
 3. The best model graded on our choice metric (Accuracy in this project) is shown beside the Experiment's status.
+
 ![Best Model](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/Completed_AML2.png)
+
 ![Best Model](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/BestRunModel2.png)
+
 ![Best Model](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/BestRunModel.png)
+
 4. Deploy the best model, enable authentication and wait for REST endpoint and SWAGGER URI creation
+
 ![Deploy Model](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/DeployModel.png)
+
+The model deployment may take some time to generate REST endpoints. If the endpoint deployment status is anything but healthy, we have to wait until it becomes healthy.
+
 5. Enable Application Insights using logs.py script.
+
 ![Endpoint Logging](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/logs1.png)
+
 ![Endpoint Logging](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/logs2.png)
+
+Execution of the logs.py script enables the application insights for the model. The application insights URI is also generated, as shown below.
+
 ![Application Insights](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/appInsights.png)
-As shown above, an application insights URI is generated once the logs.py script is executed and application insights for the model is enabled.
+
 6. Run Swagger on localhost and serve a python HTTP server on localhost
+
 ![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/swagger1.png)
+
 ![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/swagger2.png)
+
+![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/modelResponses.png)
+
+![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/modelResponses2.png)
+
+Swagger-UI shows an easy to read format of the swagger.json file provided by Azure ML Studio. 
+*Note*: We will not be able to consume the model with the local HTTP server hosted by python as no model is running on localhost. 
+
 7. Consume the deployed model using HTTP utilizing the endpoint.py script. Verify the REST endpoint URI and associated authentication key before successfully predicting using the deployed model
+
 ![Consume Endpoint](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/endpoint.png)
+
 8. Till now, we used a mix of Azure ML Studio and Azure Python SDK to create an AutoML experiment, deploy it and consume it. Now we will use Azure Python SDK exclusively to do the same.
+
 ![Pipeline Automation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/pipeline_2_1.png)
+
 The above screenshot shows the Auto-ML Experiment created from aml-pipelines-with-automated-machine-learning-step.ipynb notebook has completed.
+
 ![Pipeline Automation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/pipeline_2_2.png)
+
 The above screenshot shows the running status of the best model deployed as a REST endpoint.
+
 ![Pipeline Automation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/pipeline_2_3.png)
+
 The above screenshot shows the Pipeline Endpoints exclusively.
+
 ![Pipeline Automation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/pipeline_2_4_zoomedIn1.png)
+
 The above screenshot shows the REST endpoint URI and the deployment status is Active.
+
 ![Pipeline Automation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/pipeline_2_5.png)
+
 The above screenshot shows the link to the endpoint in aml-pipelines-with-automated-machine-learning-step.ipynb notebook for reference
+
 ![Pipeline Automation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/pipeline_2_6.png)
+
 The above screenshot shows the run details of Pipeline Endpoint run in aml-pipelines-with-automated-machine-learning-step.ipynb notebook for reference
+
 ![Pipeline Automation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/pipeline_2_7.png)
+
 The above screenshot shows the same Run ID in Azure ML Studio for reference.
 
 ## Screen Recording
