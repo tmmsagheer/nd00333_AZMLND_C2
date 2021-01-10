@@ -23,6 +23,8 @@ In this project, we do the following:
 5. Enable Application Insights using logs.py script.
 ![Endpoint Logging](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/logs1.png)
 ![Endpoint Logging](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/logs2.png)
+![Application Insights](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/appInsights.png)
+As shown above, an application insights URI is generated once the logs.py script is executed and application insights for the model is enabled.
 6. Run Swagger on localhost and serve a python HTTP server on localhost
 ![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/swagger1.png)
 ![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/swagger2.png)
