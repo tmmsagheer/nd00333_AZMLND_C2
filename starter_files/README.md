@@ -52,12 +52,12 @@ Execution of the logs.py script enables the application insights for the model. 
 
 ![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/swagger2.png)
 
-![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/modelResponses.png)
+![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/swagger3.png)
 
-![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/modelResponses2.png)
+![swagger Documentation](https://github.com/tmmsagheer/nd00333_AZMLND_C2/blob/master/starter_files/Images/swagger4.png)
 
 Swagger-UI shows an easy to read format of the swagger.json file provided by Azure ML Studio. 
-*Note*: We will not be able to consume the model with the local HTTP server hosted by python as no model is running on localhost. 
+*Note*: We will not be able to consume the model using Swagger-UI with the local HTTP server hosted by python as no model is running on localhost. 
 
 7. Consume the deployed model using HTTP utilizing the endpoint.py script. Verify the REST endpoint URI and associated authentication key before successfully predicting using the deployed model
 
